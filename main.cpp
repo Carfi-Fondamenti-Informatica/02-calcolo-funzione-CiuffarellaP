@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
 int main() {
-   for(int i=10;i>-1;i--){
-       cout<<i<<endl;
-   }
-   int j=10;
-   while (j>-1){
-       cout<<j<<endl;
-       j--;
-   }
-   return 0;
+    float a=0,b=0,x=0,y=0,z=0;
+    cin>>a>>b>>x>>y;
+    if(x<0 and y>0){
+        z=a*x-b*y;
+    }else if (x>=0 and y<=0){
+        z=a*x*x-b*y;
+    }else if (!(x<0 and y>0)|| !(x>=0 and y<=0)){
+        z=a*x+b*y*y;
+    }
+    cout<<z;
+    return 0;
 }
